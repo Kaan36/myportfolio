@@ -2,17 +2,23 @@
     <canvas #canvas1 class="canvas1"></canvas>
     <h1 #title1 class="title1">
         <div class="section-1">
-            <a href="#" class="about">About<br></a>
+            <a routerLink="/work" class="about">About<br></a>
             <span class="hello">Hello.<br> </span>
         </div>
-     
+
         <div class="section-2">
-            <a href="#" class="work">Work<br></a>
+            <a routerLink="/work" class="work">Work<br></a>
             <span class="iam">I am<br> </span>
         </div>
         <div class="section-3">
-            <a href="#" class="contact">Contact</a>
+            <a routerLink="/contact" class="contact">Contact</a>
             <span class="kaan">Kaan</span>
         </div>
     </h1>
+</div>
+<!----------------------------page-transition !!! --------------------------------------->
+<div #main class="main">
+    <div #panelLeft class="panel-left"></div>
+    <div #panelRight class="panel-right"></div>
+    <div #loadIcon id="button" class="loadIcon"></div>
 </div>

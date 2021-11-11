@@ -5,6 +5,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
 import { MainComponent } from './main/main.component';
 import { MyContactComponent } from './my-contact/my-contact.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MyContactComponent } from './my-contact/my-contact.component';
     MyContactComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
