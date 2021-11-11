@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="container-skills">
+        <h2 class="container-header">
+            Front-End Developer
+        </h2>
+        <span class="container-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam repellendus, aperiam ipsam nihil at
+            dolorem nulla magnam itaque ipsum exercitationem nesciunt mollitia consequuntur recusandae illum
+            dignissimos. Facilis ut rerum vel.
+        </span>
+    </div>
+    <div class="scroll-container-projects">
+        <div class="card" *ngFor="let project of projects">
+            <div class="card-header">
+                {{project.header}}
+            </div>
+            <div class="card-body">
+                {{project.text}}
+            </div>
+        </div>
+    </div>
+</div>

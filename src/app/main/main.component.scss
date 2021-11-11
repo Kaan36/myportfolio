@@ -1,0 +1,116 @@
+.start-screen.container {
+    position: relative;
+}
+
+.canvas1 {
+    width: 100%;
+    height: 100%;
+    background: #15171d;
+}
+
+.title1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    font-size: 160px;
+    font-weight: 600;
+    line-height: 160px;
+    white-space: nowrap;
+    //border-top: 5px solid #2e7494;
+    background-color: transparent;
+    /*&::before{
+        content: 'coding';
+        position: absolute;
+        bottom: -70px;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+        color: #EA0F1E;
+    }*/
+    .section-1 {
+        .about {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 0px;
+            left: 15px;
+            opacity: 0;
+            padding-left: 24px;
+            transform: translateX(-10%);
+            transition: all 100ms ease-in-out;
+            &:hover {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            &:hover ~ .hello {
+                opacity: 0;
+            }
+        }
+        .hello {
+            color: white;
+            position: relative;
+            z-index: -1;
+        }
+    }
+    .section-2 {
+        position: relative;
+        .work {
+            color: #ea0f1e;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            padding-left: 24px;
+            transform: translateX(-10%);
+            transition: all 100ms ease-in-out;
+            &:hover {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            &:hover ~ .iam {
+                opacity: 0;
+            }
+        }
+        .iam {
+            color: #ea0f1e;
+            text-decoration: none;
+            position: relative;
+            opacity: 1;
+            z-index: -1;
+        }
+    }
+
+    .section-3 {
+        position: relative;
+        .contact {
+            color: #ea0f1e;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            padding-left: 24px;
+            transform: translateX(-10%);
+            transition: all 100ms ease-in-out;
+            &:hover {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            &:hover ~ .kaan {
+                opacity: 0;
+            }
+        }
+        .kaan {
+            cursor: pointer;
+            color: #ea0f1e;
+            text-decoration: none;
+            position: relative;
+            opacity: 1;
+            z-index: -1;
+        }
+    }
+}

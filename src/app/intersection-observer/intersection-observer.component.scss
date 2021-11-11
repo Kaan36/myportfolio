@@ -1,0 +1,16 @@
+.animation {
+    animation: spin 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    from{
+        transform: translateX(-300%) rotate(0deg);
+    }
+    99%{
+        transform: translateX(0%) rotate(360deg);
+    }
+    to{}
+}
+
+
