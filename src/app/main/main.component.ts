@@ -59,7 +59,8 @@ export class MainComponent implements OnInit {
       this.main.nativeElement.classList.add('z-none');
       this.panelLeft.nativeElement.classList.add('open-left');
       this.panelRight.nativeElement.classList.add('open-right');
-    }, 1000)
+      this.loadIcon.nativeElement.classList.add('loadIcon-close');
+    }, 1500)
  
     this.animate();
   }

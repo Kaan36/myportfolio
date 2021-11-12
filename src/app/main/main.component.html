@@ -1,5 +1,8 @@
 <div class="start-screen-container">
     <canvas #canvas1 class="canvas1"></canvas>
+    <div class="section-header">
+        <img src="../../assets/images/by-logoX.png" alt="by-logo">
+    </div>
     <h1 #title1 class="title1">
         <div class="section-1">
             <a routerLink="/work" class="about">About<br></a>
@@ -20,5 +23,13 @@
 <div #main class="main">
     <div #panelLeft class="panel-left"></div>
     <div #panelRight class="panel-right"></div>
-    <div #loadIcon id="button" class="loadIcon"></div>
+    <div #loadIcon id="button" class="loadIcon">
+        <span class="load loadCircle">
+            <div class="section-header-load">
+                <img src="../../assets/images/by-logoX.png" alt="by-logo">
+            </div>
+            <span class="left"><span class="anim"></span></span>
+            <span class="right"><span class="anim"></span></span>
+        </span>
+    </div>
 </div>

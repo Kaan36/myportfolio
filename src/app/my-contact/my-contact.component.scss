@@ -90,3 +90,15 @@
         }
     }
 }
+
+.section-header{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    cursor: pointer;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
