@@ -1,11 +1,15 @@
 <div class="container">
-    <div class="section-header">
-        <img src="../../assets/images/by-logoX.png" alt="by-logo">
-    </div>
+
     <div class="section-text">
+        <div class="section-header">
+            <img routerLink="/main" src="../../assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
+        </div>
         <h2>Ich helfe Ihnen gerne bei der Umsetzung Ihrer Idee. Bitte kontaktieren Sie mich!</h2>
         <div class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil suscipit ullam perspiciatis neque excepturi voluptatem. Inventore molestias aperiam ducimus, neque, iste error deleniti officiis culpa excepturi nobis dolores veritatis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil suscipit ullam perspiciatis neque
+            excepturi voluptatem. Inventore molestias aperiam ducimus, neque, iste error deleniti officiis culpa
+            excepturi nobis dolores veritatis?
         </div>
     </div>
     <div class="section-form">
@@ -13,7 +17,7 @@
             <div class="form-header">
                 <h3>Informationen zu deiner Person</h3>
             </div>
-       
+
             <div class="form-name">
                 <input type="text" placeholder="Vorname*">
                 <input type="text" placeholder="Nachname*">
@@ -31,5 +35,19 @@
             </div>
         </form>
     </div>
+</div>
 
+<!----------------------------page-transition !!! --------------------------------------->
+<div #main class="main">
+    <div #panelLeft class="panel-left"></div>
+    <div #panelRight class="panel-right"></div>
+    <div #loadIcon id="button" class="loadIcon">
+        <span class="load loadCircle">
+            <div class="section-header-load">
+                <img src="../../assets/images/by-logoX.png" alt="by-logo">
+            </div>
+            <span class="left"><span class="anim"></span></span>
+            <span class="right"><span class="anim"></span></span>
+        </span>
+    </div>
 </div>

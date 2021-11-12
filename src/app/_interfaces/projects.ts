@@ -2,112 +2,22 @@ import { Card } from "./card";
 
 export const projects: Card[] = [
     {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem,  '
+        img: '../assets/images/github-fill.png',
+        header: 'Flow',
+        text: 'Einfaches KanBan Projekt welches die Grundfunktion wie z.B. Login, Backlog, Userboard usw enthält.'
     },
     {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimosLorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos'
+        img: '../assets/images/github-fill.png',
+        header: 'Pokedex',
+        text: 'Ein Pokedex Projekt, welches mithilfe einer API alle Pokemon in einem einzigartigen Design darstellt.'
     },
     {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
+        img: '../assets/images/github-fill.png',
+        header: 'Bitcoin-exchange-rate',
+        text: 'Eine Bitcoin Wep-Applikation die in Verbindung mit einer API immer die aktuellsten Daten und Trends darstellt.'
     },
     {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example1.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/example2.jpg',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
-    },
-    {
-        img: '../../assets/images/el-pollo-loco.png',
+        img: '../assets/images/github-fill.png',
         header: 'Javascript',
         text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
     },

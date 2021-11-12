@@ -2,7 +2,8 @@
 
     <div class="container-skills">
         <div class="section-header">
-            <img src="../../assets/images/by-logoX.png" alt="by-logo">
+            <img routerLink="/main" src="../../assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
         </div>
         <h2 class="container-header">
             Front-End Developer
@@ -14,7 +15,28 @@
         </span>
     </div>
     <div class="scroll-container-projects">
+        <div routerLink="/contact" class="card">
+            <div class="card-header  color-header">
+                <p>Bereit für neue Projekte</p>
+            </div>
+            <div class="card-body">
+                <p class=" card-size">Du hast Interesse? Dann kontaktiere mich einfach!</p>
+            </div>
+        </div>
+        <div href="https://github.com/Kaan36/El-pollo-loco.git" class="card-img">
+            <div class="card-body-img">
+                <div class="card-header-img">
+                    <p>2D-Jump & Run Game</p>
+                    <h3>el-pollo-loco</h3>
+                </div>
+                <img src="../../assets/images/startscreen.png">
+            </div>
+        </div>
         <div class="card" *ngFor="let project of projects">
+            <div class="card-img">
+                <img src="{{project.img}}" alt="img">
+                <p>GitHub</p>
+            </div>
             <div class="card-header">
                 {{project.header}}
             </div>
@@ -22,5 +44,20 @@
                 {{project.text}}
             </div>
         </div>
+    </div>
+</div>
+
+<!----------------------------page-transition !!! --------------------------------------->
+<div #main class="main">
+    <div #panelLeft class="panel-left"></div>
+    <div #panelRight class="panel-right"></div>
+    <div #loadIcon id="button" class="loadIcon">
+        <span class="load loadCircle">
+            <div class="section-header-load">
+                <img src="../../assets/images/by-logoX.png" alt="by-logo">
+            </div>
+            <span class="left"><span class="anim"></span></span>
+            <span class="right"><span class="anim"></span></span>
+        </span>
     </div>
 </div>

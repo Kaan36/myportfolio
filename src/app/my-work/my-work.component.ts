@@ -12,6 +12,11 @@ import { Card } from '../_interfaces/card';
 export class MyWorkComponent implements OnInit, AfterViewInit  {
 
   @ViewChildren('element') public elements: QueryList<ElementRef>;
+    /*---------------------------- variables for page-transition --------------------------------*/
+    @ViewChild('main', { static: true }) public main: any;
+    @ViewChild('panelLeft', { static: true }) public panelLeft: any;
+    @ViewChild('panelRight', { static: true }) public panelRight: any;
+    @ViewChild('loadIcon', { static: true }) public loadIcon: any;
  
   projects: Card[] = projects;
   cardsArray: any[] = cards;
@@ -27,6 +32,14 @@ export class MyWorkComponent implements OnInit, AfterViewInit  {
   }
 
   ngAfterViewInit(): void {
+  /*---------------------------------- init page-transition --------------------------------------*/
+  setTimeout(() => {
+    this.main.nativeElement.classList.add('z-none');
+    this.panelLeft.nativeElement.classList.add('open-left');
+    this.panelRight.nativeElement.classList.add('open-right');
+    this.loadIcon.nativeElement.classList.add('loadIcon-close');
+  }, 1500)
+
     console.log(this.elements)
     const isTrigger = function (element, className) {
       return element.classList.contains(className);
