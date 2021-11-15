@@ -17,14 +17,22 @@
                 In der Welt der Bits und Bytes, mache ich aus Ideen echte Projekte. Für komplexe Probleme erstelle ich
                 einfache und interaktive Lösungen.
                 Da ich in meiner vorherigen Karriere aus einer Welt der Technik komme, bringe ich Erfahrung im Bereich
-                der Automobilbranche sowie Automatisierungs- und Elektrotechnik mit. Ich liebe die Prozessor-Technik sowie Datenbussysteme.
+                der Automobilbranche sowie Automatisierungs- und Elektrotechnik mit. Ich liebe die Prozessor-Technik
+                sowie Datenbussysteme.
                 Diese Erfahrung kombiniere ich mit dem Front-End und baue dadurch einfach zu integrierende Software.
                 Aktuell arbeite ich mit Javascript, Typescript, Angular, Node.js und weiteren Front-End Tools.
             </p>
             <p>In meiner Freizeit baue ich gerne Projekte mit Arduino, Raspberry Pi und setze somit interaktive Web &
-                IoT Projekte um. Mein Ziel ist es zu automatisieren um das leben der Menschen zu erleichtern.
+                IoT Projekte um.
             </p>
         </span>
+        <div class="container-footer">
+            <div class="box" *ngFor="let box of boxes">
+                <img src="{{box.img}}" alt="">
+                <p>{{box.text}}</p>
+                <a href="{{box.link}}"></a>
+            </div>
+        </div>
     </div>
     <div class="scroll-container-projects">
         <div routerLink="/contact" class="card">
@@ -35,13 +43,16 @@
                 <p class=" card-size">Du hast Interesse? Dann kontaktiere mich einfach!</p>
             </div>
         </div>
-        <div href="https://github.com/Kaan36/El-pollo-loco.git" class="card-img">
+
+        <div class="card-img hover">
             <div class="card-body-img">
                 <div class="card-header-img">
                     <p>2D-Jump & Run Game</p>
                     <h3>el-pollo-loco</h3>
                 </div>
-                <img src="../../assets/images/startscreen.png">
+                <a href="https://github.com/Kaan36/El-pollo-loco.git">
+                    <img src="../../assets/images/startscreen.png">
+                </a>
             </div>
         </div>
         <div class="card" *ngFor="let project of projects">
@@ -55,7 +66,25 @@
             <div class="card-body">
                 {{project.text}}
             </div>
+            <a href="{{project.link}}"></a>
         </div>
+        <div class="card">
+            <div class="card-header">
+                <p>Mein Skillset</p>
+            </div>
+            <div class="card-body">
+                <p>Mit diesen Technologien und Tools habe ich schon gearbeitet und konnte mein Wissen in diversen
+                    Projekten unter Beweis stellen. </p>
+            </div>
+            <div class="container-skillSet">
+                <div class="rowSkill" *ngFor="let skill of skills">
+                    <div class="colSkill">
+                        {{skill.skill}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

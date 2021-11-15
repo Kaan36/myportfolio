@@ -61,7 +61,7 @@
     overflow: scroll;
     width: 50%;
     background-color: #111217;
-    p{
+    p {
         font-size: 10px;
         padding-left: 3px;
         color: rgb(219, 75, 75);
@@ -73,7 +73,7 @@
         .form-header {
             display: flex;
             width: 100%;
-            h3{
+            h3 {
                 margin-top: 24px;
                 margin-bottom: 12px;
             }
@@ -101,7 +101,7 @@
             width: 100%;
             border-radius: 12px;
         }
-        .row:nth-child(1){
+        .row:nth-child(1) {
             margin-right: 32px;
         }
         .col {
@@ -120,7 +120,7 @@
             font-size: 14px;
             outline-color: rgb(20, 84, 121);
         }
- 
+
         .row-textarea {
             width: 100%;
             margin-bottom: 32px;
@@ -133,6 +133,7 @@
             padding: 24px;
             color: #898c91;
             font-size: 14px;
+            resize: none;
         }
 
         button {
@@ -156,20 +157,20 @@
     }
 }
 
-.o-none{
+.o-none {
     opacity: 0;
 }
 
-.o-1{
+.o-1 {
     opacity: 1 !important;
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
 }
 
-.bg-green{
+.bg-green {
     background-color: rgb(22, 77, 22) !important;
 }
 

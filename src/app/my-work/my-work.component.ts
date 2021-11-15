@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild, ViewChildren, AfterViewInit, ElementRef, QueryList, asNativeElements, ContentChild, ContentChildren, AfterContentInit } from '@angular/core';
-import { cards } from '../_interfaces/cards';
 import { projects } from '../_interfaces/projects';
 import { Card } from '../_interfaces/card';
+import { skills } from '../_interfaces/skills';
+import { boxes } from '../_interfaces/box';
 
 
 @Component({
@@ -19,8 +20,9 @@ export class MyWorkComponent implements OnInit, AfterViewInit  {
     @ViewChild('loadIcon', { static: true }) public loadIcon: any;
  
   projects: Card[] = projects;
-  cardsArray: any[] = cards;
 
+  skills: any[] = skills;
+  boxes: any[] = boxes;
   element: any;
   ratio: any;
   className: any;

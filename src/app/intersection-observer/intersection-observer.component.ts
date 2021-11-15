@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ViewChildren, AfterViewInit, ElementRef, QueryList, asNativeElements, ContentChild, ContentChildren, AfterContentInit } from '@angular/core';
-import { cards } from '../_interfaces/cards';
 
 
 @Component({
@@ -13,8 +12,6 @@ import { cards } from '../_interfaces/cards';
 export class IntersectionObserverComponent implements OnInit, AfterViewInit {
 
   @ViewChildren('element') public elements: QueryList<ElementRef>;
- 
-  cardsArray: any[] = cards;
 
   element: any;
   ratio: any;
