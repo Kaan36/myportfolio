@@ -7,7 +7,7 @@ import { Particle } from '../_interfaces/particle.class';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, AfterViewInit {
 
   @ViewChild('canvas1', { static: true }) public canvasDoc: ElementRef<HTMLCanvasElement>;
   @ViewChild('title1', { static: true }) public titleElementDoc: any;
@@ -60,7 +60,7 @@ export class MainComponent implements OnInit {
       this.panelLeft.nativeElement.classList.add('open-left');
       this.panelRight.nativeElement.classList.add('open-right');
       this.loadIcon.nativeElement.classList.add('loadIcon-close');
-    }, 1500)
+    }, 1110)
  
     this.animate();
   }

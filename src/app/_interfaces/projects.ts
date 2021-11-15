@@ -18,7 +18,7 @@ export const projects: Card[] = [
     },
     {
         img: '../assets/images/github-fill.png',
-        header: 'Javascript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae numquam repudiandae dignissimos '
+        header: 'TicTacToe',
+        text: 'Ein simples TicTacToe spiel mit VanillaJs erstellt'
     },
 ]

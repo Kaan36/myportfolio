@@ -38,7 +38,7 @@ export class MyWorkComponent implements OnInit, AfterViewInit  {
     this.panelLeft.nativeElement.classList.add('open-left');
     this.panelRight.nativeElement.classList.add('open-right');
     this.loadIcon.nativeElement.classList.add('loadIcon-close');
-  }, 1500)
+  }, 1120)
 
     console.log(this.elements)
     const isTrigger = function (element, className) {
