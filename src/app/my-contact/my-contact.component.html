@@ -13,87 +13,119 @@
             <p>Erzählen Sir mir gerne mehr von Ihrem Projekt, ich bin schon ganz neugierig. Ich helfe Ihnen gerne bei
                 der Umsetzung.</p>
         </div>
+        <div class="e-mail">
+            <a href="bilgekaan.yilmaz36@gmail.com">
+                <img src="../../assets/images/paper-plane.png" alt="email">
+                bilgekaan.yilmaz36@gmail.com
+            </a>
+        </div>
     </div>
     <div class="section-form">
-        <form #formContact="ngForm">
-            <div class="form-header">
-                <h3>Informationen zu deiner Person</h3>
-            </div>
+        <div class="flip-card">
+            <div #flipCardInner class="flip-card-inner">
+                <div class="flip-card-front">
+                    <form #formContact="ngForm">
+                        <div class="form-header">
+                            <h3>Informationen zu deiner Person</h3>
+                        </div>
 
-            <div class="form-name">
-                <div class="row">
-                    <div class="col">
-                        <input #inputSurname="ngModel" [(ngModel)]="surname" name="name" minlength="1" required type="text" placeholder="Vorname*">
-                    </div>
-                    <div [class.o-1]="inputSurname.invalid && (inputSurname.touched || inputSurname.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Es muss ein Vorname eingegeben werden.</p>
+                        <div class="form-name">
+                            <div class="row">
+                                <div class="col">
+                                    <input #inputSurname="ngModel" [(ngModel)]="surname" class="surName" name="name"
+                                        minlength="1" required type="text" placeholder="Vorname*">
+                                </div>
+                                <div [class.o-1]="inputSurname.invalid && (inputSurname.touched || inputSurname.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Es muss ein Vorname eingegeben werden.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+
+                                    <input #inputNickname="ngModel" [(ngModel)]="nickname" class="nickName"
+                                        name="nickname" minlength="1" required type="text" placeholder="Nachname*">
+                                </div>
+                                <div [class.o-1]="inputNickname.invalid && (inputNickname.touched || inputNickname.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Es muss ein Nachname eingegeben werden.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-mail">
+                            <div class="row">
+                                <div class="col">
+                                    <input #inputEmail="ngModel" [(ngModel)]="email" class="eMail" name="email"
+                                        minlength="4" email required type="text" placeholder="E-Mail*">
+                                </div>
+                                <div [class.o-1]="inputEmail.invalid && (inputEmail.touched || inputEmail.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Es muss eine gültige E-Mail hinterlegt werden.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input #inputCompany="ngModel" [(ngModel)]="company" class="company" name="company"
+                                        minlength="1" required type="text" placeholder="Unternehmen*">
+                                </div>
+                                <div [class.o-1]="inputCompany.invalid && (inputCompany.touched || inputCompany.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Es muss ein Unternehmen eingegeben werden.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-header">
+                            <h3>Informationen zum Projekt</h3>
+                        </div>
+                        <div class="form-textarea">
+                            <div class="row-textarea">
+                                <div class="col">
+                                    <input #inputProjectHeader="ngModel" [(ngModel)]="projectHeader"
+                                        class="projectHeader" name="projectHeader" minlength="1" required required
+                                        type="text" placeholder="Projekt-Titel*">
+                                </div>
+                                <div [class.o-1]="inputProjectHeader.invalid && (inputProjectHeader.touched || inputProjectHeader.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Es muss ein Projekt-Titel eingegeben werden.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-textarea">
+                                <textarea #inputProject="ngModel" [(ngModel)]="project" required name="project"
+                                    class="project" id="" cols="30" rows="10" minlength="150"
+                                    placeholder="Projektbeschreibung*"></textarea>
+                                <div [class.o-1]="inputProject.invalid && (inputProject.touched || inputProject.dirty)"
+                                    class="row o-none">
+                                    <div class="col">
+                                        <p>Mindestens {{inputProject}}/150 Zeichen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col center">
+                                <button [disabled]="formContact.invalid" [class.bg-green]="formContact.valid"
+                                    (click)="onSubmit()" class="button"><span> Formular senden</span></button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <input #inputNickname="ngModel" [(ngModel)]="nickname" name="nickname" minlength="1" required type="text" placeholder="Nachname*">
-                    </div>
-                    <div [class.o-1]="inputNickname.invalid && (inputNickname.touched || inputNickname.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Es muss ein Nachname eingegeben werden.</p>
-                        </div>
-                    </div>
+                <div class="flip-card-back">
+                    <h2>Vielen Dank für Ihre Anfrage =)</h2>
+                    <p>Ich werde Ihre Anfrage besichtigen und mich umgehend bei Ihnen melden.</p>
                 </div>
             </div>
-            <div class="form-mail">
-                <div class="row">
-                    <div class="col">
-                        <input  #inputEmail="ngModel" [(ngModel)]="email" name="email" minlength="4" email required
-                            type="text" placeholder="E-Mail*">
-                    </div>
-                    <div [class.o-1]="inputEmail.invalid && (inputEmail.touched || inputEmail.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Es muss eine gültige E-Mail hinterlegt werden.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input #inputCompany="ngModel" [(ngModel)]="company" name="company" minlength="1" required type="text" placeholder="Unternehmen*">
-                    </div>
-                    <div [class.o-1]="inputCompany.invalid && (inputCompany.touched || inputCompany.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Es muss ein Unternehmen eingegeben werden.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-header">
-                <h3>Informationen zum Projekt</h3>
-            </div>
-            <div class="form-textarea">
-                <div class="row-textarea">
-                    <div class="col">
-                        <input #inputProjectHeader="ngModel" [(ngModel)]="projectHeader" name="projectHeader" minlength="1" required required type="text" placeholder="Projekt-Titel*">
-                    </div>
-                    <div [class.o-1]="inputProjectHeader.invalid && (inputProjectHeader.touched || inputProjectHeader.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Es muss ein Projekt-Titel eingegeben werden.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-textarea">
-                    <textarea #inputProject="ngModel" [(ngModel)]="project" required name="project" id="" cols="30" rows="10" minlength="150" placeholder="Projektbeschreibung*"></textarea>
-                    <div [class.o-1]="inputProject.invalid && (inputProject.touched || inputProject.dirty)" class="row o-none">
-                        <div class="col">
-                            <p>Mindestens {{inputProject}}/150 Zeichen.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col center">
-                    <button [disabled]="formContact.invalid" [class.bg-green]="formContact.valid" (click)="onSubmit()" class="button">Formular senden</button>
-                </div>
-            </div>
-        </form>
+        </div>
+
     </div>
 </div>
 

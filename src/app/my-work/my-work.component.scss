@@ -10,7 +10,7 @@ body {
 
 .section-header {
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     img {
@@ -36,23 +36,26 @@ body {
     height: 100%;
     margin-left: 50px;
     transition: all 225ms ease-in-out;
+    overflow: hidden;
     .container-header {
-        margin-bottom: 60px;
+        margin-bottom: 32px;
         h2 {
             font-size: 64px;
         }
     }
     .container-body {
+        width: 100%;
         color: #898c91;
         p {
-            width: 60%;
+            width: 80%;
             margin-bottom: 32px;
         }
     }
     .container-footer {
+        width: 100%;
+        margin-top: 120px;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 60px;
         .box {
             position: relative;
             display: flex;
@@ -67,7 +70,7 @@ body {
             height: 120px;
             width: 120px;
             overflow: hidden;
-            .inner-box{
+            .inner-box {
                 width: 0%;
                 transition: width 225ms ease-in-out;
                 position: absolute;
@@ -90,7 +93,7 @@ body {
                 right: 0;
                 bottom: 0;
                 z-index: 10;
-                &:hover ~ .inner-box{
+                &:hover ~ .inner-box {
                     width: 100%;
                     background-color: #2e74944d;
                 }
@@ -442,36 +445,61 @@ body {
     }
 }
 
+@media( max-width: 1600px){
+    .container-skills{
+        margin-left: 0px;
+        .container-footer{
+            margin-top: 80px;
+        }
+    }
 
-@media(max-width: 1300px){
-    .scroll-container-projects{
+  
+}
+
+@media (max-width: 1300px) {
+    .scroll-container-projects {
         padding: 32px;
     }
 }
 
-@media(max-width: 1000px){
-    .container{
+@media (max-width: 1200px) {
+    .container {
         height: 100%;
         flex-direction: column;
         align-items: center;
     }
-    .container-skills{
+    .container-skills {
         width: 100%;
-        .container-body{
-            p{
-                width: 80%;
+        .container-body {
+            p {
+                width: 100%;
             }
         }
     }
-    .scroll-container-projects{
+    .scroll-container-projects {
         padding: 84px;
         width: 100%;
     }
 }
 
-@media(max-width: 700px){
-  
-    .scroll-container-projects{
+@media (max-width: 700px) {
+    .container-header {
+        h2 {
+            font-size: 32px !important;
+        }
+    }
+
+    .container-skills{
+        .container-footer{
+            margin-top: 0px;
+            .box{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+
+    .scroll-container-projects {
         padding: 12px;
         width: 100%;
     }

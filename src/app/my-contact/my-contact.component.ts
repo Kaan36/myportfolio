@@ -17,7 +17,7 @@ export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
   @ViewChild('panelRight', { static: true }) public panelRight: any;
   @ViewChild('loadIcon', { static: true }) public loadIcon: any;
   @ViewChild('contactForm', { static: true }) public contactForm: any;
-
+  @ViewChild('flipCardInner', { static: true }) public flipCardInner: any;
 
   surname: string;
   nickname: string;
@@ -32,7 +32,7 @@ export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
   formular: Formular[];
 
 
-  constructor( private contactService: ContactService) { }
+  constructor(private contactService: ContactService) { }
 
   contactUrl: string = '/api/form';
 
@@ -40,9 +40,9 @@ export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
   }
 
   ngAfterViewInit(): void {
-    
+
     /*---------------------------------- init page-transition --------------------------------------*/
-    setTimeout(() => {      
+    setTimeout(() => {
       this.main.nativeElement.classList.add('z-none');
       this.panelLeft.nativeElement.classList.add('open-left');
       this.panelRight.nativeElement.classList.add('open-right');
@@ -63,16 +63,21 @@ export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
       projectHeader: this.projectHeader,
       project: this.project,
     };
- 
+
     this.contactService.sendForm(this.contactUrl, this.form).subscribe();
     this.getForm();
+    this.flipCard();
   }
 
-  getForm(){
+  getForm() {
     this.contactService.getForm(this.contactUrl).subscribe((result) => {
       this.formular = result;
       console.log('getForm vom Server: ', this.formular);
     });
+  }
+
+  flipCard() {
+    this.flipCardInner.nativeElement.classList.add('flipCardTurn');
   }
 
 }
