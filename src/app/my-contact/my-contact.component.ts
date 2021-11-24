@@ -12,12 +12,10 @@ import { NgModule } from '@angular/core';
 export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
 
   /*---------------------------- variables for page-transition --------------------------------*/
-  @ViewChild('main', { static: true }) public main: any;
-  @ViewChild('panelLeft', { static: true }) public panelLeft: any;
-  @ViewChild('panelRight', { static: true }) public panelRight: any;
-  @ViewChild('loadIcon', { static: true }) public loadIcon: any;
   @ViewChild('contactForm', { static: true }) public contactForm: any;
   @ViewChild('flipCardInner', { static: true }) public flipCardInner: any;
+  @ViewChild('text', { static: true }) public text: any;
+  @ViewChild('forms', { static: true }) public forms: any;
 
   surname: string;
   nickname: string;
@@ -42,12 +40,10 @@ export class MyContactComponent implements OnInit, AfterViewInit, FormsModule {
   ngAfterViewInit(): void {
 
     /*---------------------------------- init page-transition --------------------------------------*/
-    setTimeout(() => {
-      this.main.nativeElement.classList.add('z-none');
-      this.panelLeft.nativeElement.classList.add('open-left');
-      this.panelRight.nativeElement.classList.add('open-right');
-      this.loadIcon.nativeElement.classList.add('loadIcon-close');
-    }, 1120)
+    setTimeout(() =>{
+      this.forms.nativeElement.classList.add('open-form');
+      this.text.nativeElement.classList.add('open-text');
+    }, 125)
 
   }
 

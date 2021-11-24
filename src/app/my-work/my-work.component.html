@@ -1,105 +1,20 @@
 <div class="container">
 
-    <div class="container-skills">
-        <div class="section-header">
-            <img routerLink="/main" src="../../assets/images/by-logoX.png" alt="by-logo">
-            <span class="exit">go. back</span>
+    <div class="wrapper">
+        <div class="header">
+            <h3>my projects</h3>
+            <p>From Web- and Frontend Development to Javascript Animations with Angular, Typescript, Javascript and Node.JS. Check out my latest web software development portfolio projects. </p>
         </div>
-        <div class="container-header">
-            <h2>
-                Web Designer & <br>
-                Front-End Developer
-            </h2>
-        </div>
-
-        <div class="container-body">
-            <p>Ich bin leidenschaftlicher Web- & Front-End Developer und liebe alles was mit dem EVA-Prinzip zu tun hat.
-                In der Welt der Bits und Bytes, mache ich aus Ideen echte Projekte. Für komplexe Probleme erstelle ich
-                einfache und interaktive Lösungen.
-                Da ich in meiner vorherigen Karriere aus einer Welt der Technik komme, bringe ich Erfahrung im Bereich
-                der Automobilbranche sowie Automatisierungs- und Elektrotechnik mit. Ich liebe die Prozessor-Technik
-                sowie Datenbussysteme.
-                Diese Erfahrung kombiniere ich mit dem Front-End und baue dadurch einfach zu integrierende Software.
-                Aktuell arbeite ich mit Javascript, Typescript, Angular, Node.js und weiteren Front-End Tools.
-            </p>
-            <p>In meiner Freizeit baue ich gerne Projekte mit Arduino, Raspberry Pi und setze somit interaktive Web &
-                IoT Projekte um.
-            </p>
-        </div>
-        <div class="container-footer">
-            <div class="box" *ngFor="let box of boxes">
-                <img src="{{box.img}}" alt="">
-                <p>{{box.text}}</p>
-                <a href="{{box.link}}"></a>
-                <div class="inner-box"></div>
-            </div>
-        </div>
-    </div>
-    <div class="scroll-container-projects">
-        <div routerLink="/contact" class="card">
-            <div class="card-header  color-header">
-                <p>Bereit für neue Projekte</p>
-            </div>
-            <div class="card-body">
-                <p class=" card-size">Du hast Interesse? Dann kontaktiere mich einfach!</p>
-            </div>
-        </div>
-
-        <div class="card-img hover">
-            <div class="card-body-img">
-                <div class="card-header-img">
-                    <p>2D-Jump & Run Game</p>
-                    <h3>el-pollo-loco</h3>
+        <ul class="grid-list">
+            <li class="projectbox" aTilt *ngFor="let project of projects">
+                <img src="{{project.window}}" alt="project">
+                <div class="box">
+                    <button routerLink="/{{project.header}}">VIEW</button>
                 </div>
-                <a href="https://github.com/Kaan36/El-pollo-loco.git">
-                    <img src="../../assets/images/startscreen.png">
-                </a>
-            </div>
-        </div>
-        <div class="card" *ngFor="let project of projects">
-            <div class="card-img">
-                <img src="{{project.img}}" alt="img">
-                <p>GitHub</p>
-            </div>
-            <div class="card-header">
-                {{project.header}}
-            </div>
-            <div class="card-body">
-                {{project.text}}
-            </div>
-            <a href="{{project.link}}"></a>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <p>Mein Skillset</p>
-            </div>
-            <div class="card-body">
-                <p>Mit diesen Technologien und Tools habe ich schon gearbeitet und konnte mein Wissen in diversen
-                    Projekten unter Beweis stellen. </p>
-            </div>
-            <div class="container-skillSet">
-                <div class="rowSkill" *ngFor="let skill of skills">
-                    <div class="colSkill">
-                        {{skill.skill}}
-                    </div>
-                </div>
-            </div>
-        </div>
-
+                <div class="bar">{{project.header}}</div>
+            </li>
+        </ul>
     </div>
-</div>
 
-<!----------------------------page-transition !!! --------------------------------------->
-<div #main class="main">
-    <div #panelLeft class="panel-left"></div>
-    <div #panelRight class="panel-right"></div>
-    <div #loadIcon id="button" class="loadIcon">
-        <span class="load loadCircle">
-            <div class="section-header-load">
-                <img src="../../assets/images/by-logoX.png" alt="by-logo">
-            </div>
-            <span class="left"><span class="anim"></span></span>
-            <span class="right"><span class="anim"></span></span>
-        </span>
-    </div>
+
 </div>

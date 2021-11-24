@@ -1,9 +1,18 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
+.canvas1::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    overflow: hidden;
+}
+
 /*------------------------start-screen ---------------------------*/
 .start-screen.container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }

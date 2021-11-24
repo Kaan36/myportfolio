@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { MyAboutComponent } from './my-about/my-about.component';
+import { ProjectFirstComponent } from './project-first/project-first.component';
+import { AngularTiltModule } from 'angular-tilt';
 
 
 @NgModule({
@@ -19,6 +22,8 @@ import { InMemoryDataService } from './in-memory-data.service';
     IntersectionObserverComponent,
     MainComponent,
     MyContactComponent,
+    MyAboutComponent,
+    ProjectFirstComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     FormsModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {dataEncapsulation: true}),
+    AngularTiltModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

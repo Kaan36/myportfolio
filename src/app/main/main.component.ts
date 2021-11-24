@@ -61,7 +61,7 @@ export class MainComponent implements OnInit, AfterViewInit {
       this.panelRight.nativeElement.classList.add('open-right');
       this.loadIcon.nativeElement.classList.add('loadIcon-close');
     }, 1110)
- 
+   
     this.animate();
   }
 

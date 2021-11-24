@@ -1,6 +1,6 @@
 <div class="container">
 
-    <div class="section-text">
+    <div #text class="section-text">
         <div class="section-header">
             <img routerLink="/main" src="../../assets/images/by-logoX.png" alt="by-logo">
             <span class="exit">go. back</span>
@@ -20,7 +20,7 @@
             </a>
         </div>
     </div>
-    <div class="section-form">
+    <div #forms class="section-form">
         <div class="flip-card">
             <div #flipCardInner class="flip-card-inner">
                 <div class="flip-card-front">
@@ -126,20 +126,5 @@
             </div>
         </div>
 
-    </div>
-</div>
-
-<!----------------------------page-transition !!! --------------------------------------->
-<div #main class="main">
-    <div #panelLeft class="panel-left"></div>
-    <div #panelRight class="panel-right"></div>
-    <div #loadIcon id="button" class="loadIcon">
-        <span class="load loadCircle">
-            <div class="section-header-load">
-                <img src="../../assets/images/by-logoX.png" alt="by-logo">
-            </div>
-            <span class="left"><span class="anim"></span></span>
-            <span class="right"><span class="anim"></span></span>
-        </span>
     </div>
 </div>
