@@ -5,6 +5,9 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { MyContactComponent } from './my-contact/my-contact.component';
 import { MyAboutComponent } from './my-about/my-about.component';
 import { ProjectFirstComponent } from './project-first/project-first.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
+import { TictactoeComponent } from './tictactoe/tictactoe.component';
+import { BitcoinComponent } from './bitcoin/bitcoin.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,15 @@ const routes: Routes = [
   },
   {
     path: 'flow', component: ProjectFirstComponent
+  },
+  {
+    path: 'pokedex', component: PokedexComponent
+  },
+  {
+    path: 'tictactoe', component: TictactoeComponent
+  },
+  {
+    path: 'bitcoin', component: BitcoinComponent
   },
 ]
 

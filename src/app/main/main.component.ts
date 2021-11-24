@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, HostListener, ElementRef} from '@angular/core';
 import { Particle } from '../_interfaces/particle.class';
 
 
@@ -45,7 +45,9 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
+    
     this.canvas = this.canvasDoc.nativeElement;
     this.ctx = this.canvas.getContext('2d');
     this.canvas.width = window.innerWidth;

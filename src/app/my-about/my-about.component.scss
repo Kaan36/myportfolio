@@ -63,7 +63,7 @@ body {
     }
     .container-footer {
         width: 100%;
-        margin-top: 120px;
+        margin-top: 240px;
         display: flex;
         flex-wrap: wrap;
         transition: all 225ms ease-in-out;
@@ -78,8 +78,8 @@ body {
             background-color: #111217;
             border-radius: 12px;
             color: #898c91;
-            height: 100px;
-            width: 100px;
+            height: 90px;
+            width: 90px;
             overflow: hidden;
             .inner-box {
                 width: 0%;
@@ -278,7 +278,7 @@ body {
     .container-skills {
         margin-left: 0px;
         .container-footer {
-            margin-top: 80px;
+            margin-top: 150px;
         }
     }
 }

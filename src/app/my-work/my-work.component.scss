@@ -7,6 +7,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .section-header {
+        width: 100%;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 60px;
+            cursor: pointer;
+            &:hover ~ .exit {
+                z-index: 10;
+                opacity: 1;
+                transform: translateX(5%);
+            }
+        }
+        .exit {
+            width: 300px;
+            font-size: 36px;
+            opacity: 0;
+            transition: all 225ms ease-in-out;
+        }
+    }
     .wrapper {
         width: 70%;
     }
@@ -112,3 +133,18 @@
         }
     }
 }
+
+// .animation {
+//     animation: fly 500ms ease-in-out;
+//     animation-fill-mode: forwards;
+// }
+
+// @keyframes fly {
+//     from{
+//         transform: translateX(-100%);
+//     }
+//     to{
+//         transform: translateX(0);
+//     }
+
+// }

@@ -13,6 +13,9 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { MyAboutComponent } from './my-about/my-about.component';
 import { ProjectFirstComponent } from './project-first/project-first.component';
 import { AngularTiltModule } from 'angular-tilt';
+import { PokedexComponent } from './pokedex/pokedex.component';
+import { TictactoeComponent } from './tictactoe/tictactoe.component';
+import { BitcoinComponent } from './bitcoin/bitcoin.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { AngularTiltModule } from 'angular-tilt';
     MyContactComponent,
     MyAboutComponent,
     ProjectFirstComponent,
+    PokedexComponent,
+    TictactoeComponent,
+    BitcoinComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,24 @@
 import { Component, OnInit, ViewChild, ViewChildren, QueryList, AfterViewInit, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-project-first',
-  templateUrl: './project-first.component.html',
-  styleUrls: ['./project-first.component.scss']
+  selector: 'app-pokedex',
+  templateUrl: './pokedex.component.html',
+  styleUrls: ['./pokedex.component.scss']
 })
-export class ProjectFirstComponent implements OnInit, AfterViewInit {
+export class PokedexComponent implements OnInit, AfterViewInit {
 
   @ViewChild('image1') public image1: ElementRef;
   @ViewChild('image2') public image2: ElementRef;
   @ViewChild('image3') public image3: ElementRef;
 
-/**
+  /**
  * ---------------------- intersection Observer ------------------------------------
  */
-  @ViewChildren('element') public elements: QueryList<ElementRef>;
-  element: any;
-  ratio: any;
-  className: any;
-  status: any;
+   @ViewChildren('element') public elements: QueryList<ElementRef>;
+   element: any;
+   ratio: any;
+   className: any;
+   status: any;
 
 
   public indexValue: number = 1;
@@ -29,63 +29,63 @@ export class ProjectFirstComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.startSlider();
 
-    /**
+       /**
  * ---------------------- intersection Observer ------------------------------------
  */
 
-    console.log(this.elements)
-    const isTrigger = function (element, className) {
-      return element.classList.contains(className);
-    }
-    const startAnimation = function(element, status) {
-      if (status) {
-        element.classList.add('animation');
-      } else {
-        element.classList.remove('animation');
-      }
-    }
-
-    const generateThresholds = () => {
-      const threshold = [];
-      for (let i = 1; i < 101; i++) {
-        threshold.push((i - 1) / 100);
-      }
-      return threshold;
-    }
-
-    const startMove = function (element: any, ratio: number) {
-      element.style.opacity = ratio;
-      element.style.transform = `rotate(${(360 * ratio)}deg)`;
-  
-    };
-    const startOpacity = function (element: any, ratio: number) {
-        element.style.opacity = (ratio/2);
+        console.log(this.elements)
+        const isTrigger = function (element, className) {
+          return element.classList.contains(className);
+        }
+        const startAnimation = function(element, status) {
+          if (status) {
+            element.classList.add('animation');
+          } else {
+            element.classList.remove('animation');
+          }
+        }
     
-    };
-
-    const myObserver = new IntersectionObserver(elements => {
-      elements.forEach(element => {
-
-        if (isTrigger(element.target, 'first')) {
-          startMove(element.target, element.intersectionRatio);
+        const generateThresholds = () => {
+          const threshold = [];
+          for (let i = 1; i < 101; i++) {
+            threshold.push((i - 1) / 100);
+          }
+          return threshold;
         }
-        if (isTrigger(element.target, 'animated')) {
-          startAnimation(element.target, element.isIntersecting);
-        }
-        if (isTrigger(element.target, 'opacity')) {
-          startOpacity(element.target, element.intersectionRatio);
-        }
-      })
-    }, {
-      root: document.querySelector('#element'),
-      rootMargin: '0px',
-      threshold: generateThresholds()
-    });
-
     
-    this.elements.forEach(elm => {
-    myObserver.observe(elm.nativeElement);
-    });
+        const startMove = function (element: any, ratio: number) {
+          element.style.opacity = ratio;
+          element.style.transform = `rotate(${(360 * ratio)}deg)`;
+      
+        };
+        const startOpacity = function (element: any, ratio: number) {
+            element.style.opacity = (ratio/2);
+        
+        };
+    
+        const myObserver = new IntersectionObserver(elements => {
+          elements.forEach(element => {
+    
+            if (isTrigger(element.target, 'first')) {
+              startMove(element.target, element.intersectionRatio);
+            }
+            if (isTrigger(element.target, 'animated')) {
+              startAnimation(element.target, element.isIntersecting);
+            }
+            if (isTrigger(element.target, 'opacity')) {
+              startOpacity(element.target, element.intersectionRatio);
+            }
+          })
+        }, {
+          root: document.querySelector('#element'),
+          rootMargin: '0px',
+          threshold: generateThresholds()
+        });
+    
+        
+        this.elements.forEach(elm => {
+        myObserver.observe(elm.nativeElement);
+        });
   }
 
   startSlider() {
@@ -95,7 +95,7 @@ export class ProjectFirstComponent implements OnInit, AfterViewInit {
       this.image2.nativeElement.style.transform = 'translateX(0)';
       this.image3.nativeElement.style.transform = 'translateX(100%)';
       this.indexValue = 2;
-
+     
     }.bind(this), 3000)
 
     setTimeout(function () {

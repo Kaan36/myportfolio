@@ -1,12 +1,15 @@
 <div class="container">
-
     <div class="wrapper">
-        <div class="header">
+        <div #element class="section-header animated">
+            <img routerLink="/main" src="../../assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
+        </div>
+        <div #element class="header animated">
             <h3>my projects</h3>
             <p>From Web- and Frontend Development to Javascript Animations with Angular, Typescript, Javascript and Node.JS. Check out my latest web software development portfolio projects. </p>
         </div>
         <ul class="grid-list">
-            <li class="projectbox" aTilt *ngFor="let project of projects">
+            <li #element class="projectbox animated" aTilt *ngFor="let project of projects">
                 <img src="{{project.window}}" alt="project">
                 <div class="box">
                     <button routerLink="/{{project.header}}">VIEW</button>
