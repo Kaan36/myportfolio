@@ -29,6 +29,7 @@
     .wrapper {
         padding: 32px;
         width: 50%;
+        transition: all 225ms ease-in-out;
         .header {
             text-align: start;
             margin-bottom: 40px;
@@ -51,13 +52,14 @@
             width: 100%;
             box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.116);
             overflow: hidden;
+            transition: all 225ms ease-in-out;
             .next{
                 position: absolute;
                 right: 0;
                 width: 25%;
                 padding: 32px;
                 height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5));
+                background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1));
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -79,7 +81,7 @@
                 width: 25%;
                 height: 100%;
                 padding: 32px;
-                background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5));
+                background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.1));
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -203,4 +205,84 @@
         transform: translateX(0);
     }
 
+}
+
+@media(max-width: 1700px){
+    .container{
+        padding: 12px;
+        .wrapper{
+            width: 60%;
+            .projectbox{
+                height: 500px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1500px){
+    .container{
+        padding: 12px;
+        .wrapper{
+            width: 70%;
+            .projectbox{
+                height: 500px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px){
+    .container{
+        padding: 12px;
+        .wrapper{
+            width: 80%;
+            .projectbox{
+                height: 500px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .container{
+        padding: 12px;
+        .wrapper{
+            width: 80%;
+            .projectbox{
+                height: 450px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .container{
+        padding: 12px;
+        .wrapper{
+            width: 100%;
+            .projectbox{
+                height: 400px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        padding: 0;
+        .wrapper{
+            width: 100%;
+            .projectbox{
+                height: 250px;
+                width: 100%;
+            }
+        }
+    }
 }

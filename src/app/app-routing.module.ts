@@ -8,6 +8,9 @@ import { ProjectFirstComponent } from './project-first/project-first.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { AgbComponent } from './agb/agb.component';
 
 const routes: Routes = [
   {
@@ -36,6 +39,15 @@ const routes: Routes = [
   },
   {
     path: 'bitcoin', component: BitcoinComponent
+  },
+  {
+    path: 'data-protection', component: DataProtectionComponent
+  },
+  {
+    path: 'imprint', component: ImprintComponent
+  },
+  {
+    path: 'agb', component: AgbComponent
   },
 ]
 

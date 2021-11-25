@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 225ms ease-in-out;
     .section-header {
         width: 100%;
         margin-bottom: 40px;
@@ -32,10 +33,12 @@
         width: 70%;
     }
     .header {
+        transition: all 225ms ease-in-out;
         text-align: start;
         margin-bottom: 120px;
         width: 100%;
         font-size: 76px;
+        padding-left: 12px;
         h3 {
             margin-top: 100px;
             color: white;
@@ -61,6 +64,7 @@
         width: 500px;
         margin: 16px;
         box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.116);
+        transition: all 225ms ease-in-out;
         img {
             object-fit: cover;
             width: 100%;
@@ -87,10 +91,13 @@
             width: 0;
             opacity: 1;
             height: 50px;
-            background-color: rgb(18, 128, 172);
+            background: #15171d;
+            color: white;
+            text-shadow: 1px 1px 1px black;
             z-index: 100;
             overflow: hidden;
             transition: all 225ms ease-in-out;
+            box-shadow: 0 0 0.125rem rgb(0 0 0 / 50%);
             &:hover {
                 width: 100%;
                 opacity: 1;
@@ -114,7 +121,7 @@
                 font-size: 32px;
                 font-weight: 700;
                 background-color: transparent;
-                border: 2px solid rgb(18, 128, 172);
+                border: 2px solid rgb(83, 81, 81);
                 padding: 12px;
                 color: white;
                 &:hover {
@@ -134,17 +141,38 @@
     }
 }
 
-// .animation {
-//     animation: fly 500ms ease-in-out;
-//     animation-fill-mode: forwards;
-// }
+.animation {
+    animation: fly 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
 
-// @keyframes fly {
-//     from{
-//         transform: translateX(-100%);
-//     }
-//     to{
-//         transform: translateX(0);
-//     }
+@keyframes fly {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
 
-// }
+@media (max-width: 850px) {
+    .container{
+        padding: 12px;
+        .header{
+            font-size: 64px;
+        }
+        .wrapper{
+            width: 100%;
+            .projectbox{
+                height: 400px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        padding: 0;
+    }
+}

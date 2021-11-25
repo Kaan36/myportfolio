@@ -27,12 +27,22 @@
             </p>
         </div>
         <div class="container-footer">
-            <div class="box" aTilt *ngFor="let box of boxes">
-                <img src="{{box.img}}" alt="">
-                <p>{{box.text}}</p>
-                <a href="{{box.link}}"></a>
-                <div class="inner-box"></div>
-            </div>
+            <a #box1 (mouseover)="mouseoverBox1()" (mouseleave)="mouseleaveBox1()" href="https://github.com/Kaan36" class="box" aTilt>
+                <img src="../../assets/images/github-fill.png" alt="">
+                <p>GitHub</p>
+            </a>
+            <a #box2 (mouseover)="mouseoverBox2()" (mouseleave)="mouseleaveBox2()" href="" class="box" aTilt>
+                <img src="../../assets/images/github-fill.png" alt="">
+                <p>placeholder</p>
+            </a>
+            <a #box3 (mouseover)="mouseoverBox3()" (mouseleave)="mouseleaveBox3()" href="" class="box" aTilt>
+                <img src="../../assets/images/linkedin-logo.png" alt="">
+                <p>LinkedIn</p>
+            </a>
+            <a #box4 (mouseover)="mouseoverBox4()" (mouseleave)="mouseleaveBox4()" href="" class="box" aTilt>
+                <img src="../../assets/images/github-fill.png" alt="">
+                <p>placeholder</p>
+            </a>
         </div>
     </div>
     <div #project class="scroll-container-projects">
@@ -85,7 +95,12 @@
                 </div>
             </div>
         </div>
-
+        <div class="footer">
+            <a routerLink="/imprint">Impressum</a>
+            <a routerLink="/data-protection">Datenschutz</a>
+            <a routerLink="">Cookies</a>
+            <a routerLink="/agb">AGB</a>
+        </div>
     </div>
 </div>
 

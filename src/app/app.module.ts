@@ -16,6 +16,9 @@ import { AngularTiltModule } from 'angular-tilt';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { AgbComponent } from './agb/agb.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { BitcoinComponent } from './bitcoin/bitcoin.component';
     PokedexComponent,
     TictactoeComponent,
     BitcoinComponent,
+    DataProtectionComponent,
+    ImprintComponent,
+    AgbComponent,
   ],
   imports: [
     BrowserModule,

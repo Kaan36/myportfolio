@@ -59,7 +59,7 @@ export class ProjectFirstComponent implements OnInit, AfterViewInit {
   
     };
     const startOpacity = function (element: any, ratio: number) {
-        element.style.opacity = (ratio/2);
+        element.style.opacity = ratio;
     
     };
 

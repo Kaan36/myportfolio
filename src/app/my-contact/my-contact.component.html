@@ -14,8 +14,8 @@
                 der Umsetzung.</p>
         </div>
         <div class="e-mail">
-            <a href="bilgekaan.yilmaz36@gmail.com">
-                <img src="../../assets/images/paper-plane.png" alt="email">
+            <img src="../../assets/images/paper-plane.png" alt="email">
+            <a href="mailto:bilgekaan.yilmaz36@gmail.com">
                 bilgekaan.yilmaz36@gmail.com
             </a>
         </div>
@@ -101,12 +101,12 @@
                             </div>
                             <div class="row-textarea">
                                 <textarea #inputProject="ngModel" [(ngModel)]="project" required name="project"
-                                    class="project" id="" cols="30" rows="10" minlength="150"
+                                    class="project" id="" cols="30" rows="10" minlength="50"
                                     placeholder="Projektbeschreibung*"></textarea>
                                 <div [class.o-1]="inputProject.invalid && (inputProject.touched || inputProject.dirty)"
                                     class="row o-none">
                                     <div class="col">
-                                        <p>Mindestens {{inputProject}}/150 Zeichen.</p>
+                                        <p>Mindestens {{0}} / 50 Zeichen.</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,6 +125,11 @@
                 </div>
             </div>
         </div>
-
+        <div class="footer">
+            <a routerLink="/imprint">Impressum</a>
+            <a routerLink="/data-protection">Datenschutz</a>
+            <a routerLink="">Cookies</a>
+            <a routerLink="/agb">AGB</a>
+        </div>
     </div>
 </div>

@@ -52,21 +52,23 @@
     }
 
     .e-mail {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
         margin-top: 60px;
+        img {
+            height: 20px;
+            margin-right: 12px;
+        }
         a {
-            display: flex;
-            align-items: center;
-            height: 60px;
+            height: 20px;
             text-decoration: none;
             color: white;
             font-size: 16px;
             flex-wrap: wrap;
             word-wrap: break-word;
             z-index: 10;
-            img {
-                height: 20px;
-                margin-right: 12px;
-            }
             &:hover{
                 color: #2A6A8D;
             }
@@ -286,6 +288,22 @@
             font-size: 14px;
             cursor: pointer;
             transition: all 500ms ease-in-out;
+        }
+    }
+    .footer {
+        width: 100%;
+        margin-top: 64px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 6px;
+            &:hover{
+                color: #898c91;
+            }
         }
     }
 }

@@ -9,8 +9,16 @@ import { projects } from '../_interfaces/projects';
 export class MyWorkComponent implements OnInit, AfterViewInit {
 
   @ViewChildren('element') public elements: QueryList<ElementRef>;
+  @ViewChildren('bar') public bar: QueryList<ElementRef>;
 
   projects: any[] = projects;
+
+  mouseoverBar(){
+    let color = '#';
+    color += Math.random().toString(16).slice(2, 8);
+    this.bar.forEach(el =>
+    el.nativeElement.style = 'background:' + color )
+  }
 
   constructor() { }
 
@@ -18,6 +26,8 @@ export class MyWorkComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+
+    
 
     console.log(this.elements)
     const isTrigger = function (element, className) {
@@ -45,7 +55,7 @@ export class MyWorkComponent implements OnInit, AfterViewInit {
 
     };
     const startOpacity = function (element: any, ratio: number) {
-      element.style.opacity = (ratio / 2);
+      element.style.opacity = ratio;
 
     };
 

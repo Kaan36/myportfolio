@@ -14,7 +14,7 @@ body {
     width: 100vw;
     display: flex;
     height: 100vh;
-    background-color: #15171D;
+    background-color: #15171d;
 }
 
 .section-header {
@@ -68,7 +68,6 @@ body {
         flex-wrap: wrap;
         transition: all 225ms ease-in-out;
         .box {
-            position: relative;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -78,36 +77,16 @@ body {
             background-color: #111217;
             border-radius: 12px;
             color: #898c91;
-            height: 90px;
-            width: 90px;
-            overflow: hidden;
-            .inner-box {
-                width: 0%;
-                transition: width 225ms ease-in-out;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
+            height: 100px;
+            width: 100px;
+            text-decoration: none;
             img {
-                width: 30px;
+                width: 25px;
                 filter: invert(100%);
             }
             p {
                 margin-top: 12px;
-            }
-            a {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 10;
-                &:hover ~ .inner-box {
-                    width: 100%;
-                    background-color: #2e74944d;
-                }
+                font-size: 12px;
             }
         }
     }
@@ -242,6 +221,22 @@ body {
                 height: 100%;
                 object-fit: cover;
                 border-radius: 12px;
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        margin-top: 64px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 6px;
+            &:hover{
+                color: #898c91;
             }
         }
     }
