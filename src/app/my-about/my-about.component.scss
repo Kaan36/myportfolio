@@ -195,6 +195,25 @@ body {
         }
     }
 
+    .card-canvas {
+        min-width: 100%;
+        background-color: #15171d;
+        margin: 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        padding: 32px;
+        text-align: center;
+        h3{
+            margin-bottom: 32px;
+            font-size: 26px;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
     .card-img {
         min-width: 100%;
         background-color: #15171d;
@@ -205,6 +224,7 @@ body {
             position: relative;
             font-size: 14px;
             height: 650px;
+            padding: 6px;
             .card-header-img {
                 position: absolute;
                 top: 20px;
@@ -216,6 +236,8 @@ body {
                     font-size: 38px;
                 }
             }
+
+           
             img {
                 width: 100%;
                 height: 100%;
