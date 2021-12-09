@@ -11,6 +11,14 @@ import { BitcoinComponent } from './bitcoin/bitcoin.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
+import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
+import { CanvasParticleComponent } from './canvas-particle/canvas-particle.component';
+import { CalculatorJsComponent } from './calculator-js/calculator-js.component';
+import { CanvasStrokeComponent } from './canvas-stroke/canvas-stroke.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { PersonalTodoComponent } from './personal-todo/personal-todo.component';
+import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
+import { SimpleCrmComponent } from './simple-crm/simple-crm.component';
 
 const routes: Routes = [
   {
@@ -39,6 +47,30 @@ const routes: Routes = [
   },
   {
     path: 'bitcoin', component: BitcoinComponent
+  },
+  {
+    path: 'hotel-booking', component: HotelBookingComponent
+  },
+  {
+    path: 'canvas-particle', component: CanvasParticleComponent
+  },
+  {
+    path: 'calculator-js', component: CalculatorJsComponent
+  },
+  {
+    path: 'canvas-stroke', component: CanvasStrokeComponent
+  },
+  {
+    path: 'image-gallery', component: ImageGalleryComponent
+  },
+  {
+    path: 'personal-todo', component: PersonalTodoComponent
+  },
+  {
+    path: 'intersection-observer', component: IntersectionObserverComponent
+  },
+  {
+    path: 'simple-crm', component: SimpleCrmComponent
   },
   {
     path: 'data-protection', component: DataProtectionComponent

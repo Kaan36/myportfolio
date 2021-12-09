@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="wrapper">
+        <div #element class="section-header animated">
+            <img routerLink="/work" src="./assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
+        </div>
+        <div #element class="header animated">
+            <h3>Canvas-Stroke</h3>
+            <p>Kugeln die im Canvas zufällig generiert werden und auf die Mausbewegung reagieren, geschrieben mit VanillaJS. </p>
+        </div>
+        <div #element class="projectbox animated">
+            <div #image1 class="image-1"><img src="./assets/images/canvas-stroke/canvas-stroke-style.png" alt="show"></div>
+            <div #image2 class="image-2"><img src="./assets/images/canvas-stroke/canvas-stroke-2.png" alt="show"></div>
+            <div #image3 class="image-3"><img src="./assets/images/canvas-stroke/canvas-stroke-3.png" alt="show"></div>
+            <div class="next" (click)="nextImg()">
+                <img src="./assets/images/right-arrow.png">
+            </div>
+            <div class="prev" (click)="prevImg()">
+                <img src="./assets/images/left-arrow.png">
+            </div>
+        </div>
+        <div class="buttons">
+            <button (click)="showImg1()"></button>
+            <button (click)="showImg2()"></button>
+            <button (click)="showImg3()"></button>
+        </div>
+        <div class="text">
+            <div #element class="section opacity animated">
+                <h2>About this project</h2>
+                <hr>
+                <p>Ich habe mit diesem Projekt während meiner Weiterbildung zum Frontend-Webentwickler angefangen. Ich habe mich explizit mit dem 
+                    Canvas-tag und der Animationsmöglichkeiten befasst. Mit VanillaJs habe ich dann verschiedene Möglichkeiten gesucht mithilfe einer klasse 
+                    objekte zu erstellen und diese im canvas zu visualisieren. In diesem Projekt habe ich kugeln erstellt die random drawen und herumfliegen.
+                    Außerdem verbinden sich die Kugeln durch Linien bei näherkommen, und Sie reagieren auch auf die Mausbewegungen und halten sich von der Area der mouseover Funktion fern.
+                </p>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Technical Sheet</h2>
+                <h3>Code technologies I got involved with while working on this project.</h3>
+                <hr>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>VanillaJs</li>
+                    <li>Canvas</li>
+
+                </ul>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Resources</h2>
+                <hr>
+                <ul>
+                    <li>The project is online at http://......</li>
+                    <li>Access the project's source on <a href="#">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

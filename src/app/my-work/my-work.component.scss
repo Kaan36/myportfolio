@@ -1,13 +1,13 @@
 .container {
     padding: 32px;
     height: 100%;
-    width: 100vw;
     background-color: #15171d;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 225ms ease-in-out;
+    overflow-x: hidden;
     .section-header {
         width: 100%;
         margin-bottom: 40px;
@@ -30,7 +30,8 @@
         }
     }
     .wrapper {
-        width: 70%;
+        width: 100%;
+        max-width: 90vw;
     }
     .header {
         transition: all 225ms ease-in-out;
@@ -120,6 +121,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 12px;
             button {
                 cursor: pointer;
                 font-size: 32px;

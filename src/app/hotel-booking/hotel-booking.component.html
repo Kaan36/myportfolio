@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="wrapper">
+        <div #element class="section-header animated">
+            <img routerLink="/work" src="./assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
+        </div>
+        <div #element class="header animated">
+            <h3>hotel-booking</h3>
+            <p>Ein hotel-booking Projekt mit schlichtem Design womit man die Übersicht der freien- oder belegten Zimmer
+                beibehalten kann. </p>
+        </div>
+        <div #element class="projectbox animated">
+            <div #image1 class="image-1"><img src="./assets/images/hotel-reservation/hotel-app.png" alt="show"></div>
+            <div #image2 class="image-2"><img src="./assets/images/hotel-reservation/hotel-create.png" alt="show"></div>
+            <div #image3 class="image-3"><img src="./assets/images/hotel-reservation/hotel-event.png" alt="show"></div>
+            <div class="next" (click)="nextImg()">
+                <img src="./assets/images/right-arrow.png">
+            </div>
+            <div class="prev" (click)="prevImg()">
+                <img src="./assets/images/left-arrow.png">
+            </div>
+        </div>
+        <div class="buttons">
+            <button (click)="showImg1()"></button>
+            <button (click)="showImg2()"></button>
+            <button (click)="showImg3()"></button>
+        </div>
+        <div class="text">
+            <div #element class="section opacity animated">
+                <h2>About this project</h2>
+                <hr>
+                <p>Ich habe mit diesem Projekt während meiner Einarbeitung beim Angular-Framework angefangen. Ich habe
+                    in diesem Projekt
+                    die Aufgabe übernommen einem Hotel die Übersicht zugewähren über den Status der belegten sowie
+                    freien Zimmer intern. Mit dieser Applikation
+                    hat man immer stets die Übersicht und kann einfach den Buchungsstatus mit den Daten der Kunden
+                    eintragen.
+                </p>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Technical Sheet</h2>
+                <h3>Code technologies I got involved with while working on this project.</h3>
+                <hr>
+                <ul>
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>Angular</li>
+                    <li>Bootstrap</li>
+
+                </ul>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Resources</h2>
+                <hr>
+                <ul>
+                    <li>The project is online at http://......</li>
+                    <li>Access the project's source on <a href="#">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

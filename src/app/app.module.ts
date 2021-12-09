@@ -19,6 +19,13 @@ import { BitcoinComponent } from './bitcoin/bitcoin.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { AgbComponent } from './agb/agb.component';
+import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
+import { CanvasParticleComponent } from './canvas-particle/canvas-particle.component';
+import { CalculatorJsComponent } from './calculator-js/calculator-js.component';
+import { CanvasStrokeComponent } from './canvas-stroke/canvas-stroke.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { PersonalTodoComponent } from './personal-todo/personal-todo.component';
+import { SimpleCrmComponent } from './simple-crm/simple-crm.component';
 
 
 @NgModule({
@@ -36,6 +43,13 @@ import { AgbComponent } from './agb/agb.component';
     DataProtectionComponent,
     ImprintComponent,
     AgbComponent,
+    HotelBookingComponent,
+    CanvasParticleComponent,
+    CalculatorJsComponent,
+    CanvasStrokeComponent,
+    ImageGalleryComponent,
+    PersonalTodoComponent,
+    SimpleCrmComponent,
   ],
   imports: [
     BrowserModule,

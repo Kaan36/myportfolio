@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="wrapper">
+        <div #element class="section-header animated">
+            <img routerLink="/work" src="./assets/images/by-logoX.png" alt="by-logo">
+            <span class="exit">go. back</span>
+        </div>
+        <div #element class="header animated">
+            <h3>Intersection-Observer</h3>
+            <p>This is a project with intersectionObserver API to localize position of elements and trigger with config animation</p>
+        </div>
+        <div #element class="projectbox animated">
+            <div #image1 class="image-1"><img src="./assets/images/intersection-observer/intersection-observer.png" alt="show"></div>
+            <div #image2 class="image-2"><img src="./assets/images/intersection-observer/intersection-observer-2.png" alt="show"></div>
+            <div #image3 class="image-3"><img src="./assets/images/intersection-observer/intersection-observer-3.png" alt="show"></div>
+            <div class="next" (click)="nextImg()">
+                <img src="./assets/images/right-arrow.png">
+            </div>
+            <div class="prev" (click)="prevImg()">
+                <img src="./assets/images/left-arrow.png">
+            </div>
+        </div>
+        <div class="buttons">
+            <button (click)="showImg1()"></button>
+            <button (click)="showImg2()"></button>
+            <button (click)="showImg3()"></button>
+        </div>
+        <div class="text">
+            <div #element class="section opacity animated">
+                <h2>About this project</h2>
+                <hr>
+                <p>Ich habe dieses Projekt im Rahmen meiner Weiterbildung zum Webentwickler erstellt. Mithilfe der intersectionObserver API habe ich in Javascript ein Projekt erstellt,
+                    womit ich Elemente im Sichtfeld erkennen und mithilfe einer vorher vergebenen ID, Animationen ausführen/triggern kann.
+
+                </p>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Technical Sheet</h2>
+                <h3>Code technologies I got involved with while working on this project.</h3>
+                <hr>
+                <ul>
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>Javascript ES6</li>
+                </ul>
+            </div>
+            <div #element class="section opacity animated">
+                <h2>Resources</h2>
+                <hr>
+                <ul>
+                    <li>The project is online at http://......</li>
+                    <li>Access the project's source on <a href="https://github.com/Kaan36/tictactoe.git">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

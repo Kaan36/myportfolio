@@ -18,9 +18,18 @@ export const skills: any[] = [
         skill: 'CSS3 (SASS)',
     },
     {
-        skill: 'Git',
+        skill: 'Github',
     },
     {
         skill: 'Scrum',
+    },
+    {
+        skill: 'chart.js',
+    },
+    {
+        skill: 'Material',
+    },
+    {
+        skill: 'Bootstrap',
     },
 ]
